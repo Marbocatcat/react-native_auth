@@ -13,6 +13,7 @@ export default class LoginForm extends Component {
   }
 
   onLoginSuccess = () => {
+    console.log('Log in Successful');
     this.setState({
       loading: false,
       email: '',
@@ -22,6 +23,7 @@ export default class LoginForm extends Component {
   }
 
   onLoginFail = () => {
+    console.log('Log in Failed');
     this.setState({
       error: 'Authentication Failed',
       loading: false,
